@@ -23,14 +23,16 @@
         padding: 10px;
         display: flex;
         justify-content: center;
+        align-items: center;
         border: 8px solid black;
         min-height: 800px;
-        align-items: center;
-        flex-direction: row-reverse;
+        gap: 3em;
       }
 
-      .box:hover {
-        transform: scale(10px);
+      @media (min-width: 375px) {
+        .flex-container {
+          flex-wrap: wrap;
+        }
       }
     </style>
   </head>
